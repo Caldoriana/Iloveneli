@@ -4,155 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>I love Neli</title>
-    <script>
-
-        function yesClick() {
-            var c = document.querySelector("#container");
-            c.style.display = "none"
-
-            var y = document.querySelector(".yippie");
-            y.style.display = "block"
-        }
-
-        function noClick() {
-            var b = document.querySelector("#nobtn");
-
-            let i = Math.floor(Math.random()*500)+1;
-            let j = Math.floor(Math.random()*500)+1;
-
-            b.style.left = i + "px";
-            b.style.top = j + "px";
-        }
-    </script>
     <style>
         body {
             font-family: 'Arial', sans-serif; /* You can change this to any romantic font you like */
-            background: white; /* Soft pink background */
+            background: #ffedea; /* Soft pink background */
             color: #555;
             padding-top: 20px;
             padding-left: 20%;
             padding-right: 20%;
         }
 
-        .hamstergif {
-            position: absolute;
-            width: 200px;
-            left: 100px;
-            top: 0;
-            margin: auto;
-            bottom: 0;
+        h1 {
+            font-size: 2em;
+            text-align: center;
+            margin-bottom: 30px;
+            color: #d24d57; /* Dark pink for the title */
         }
 
-
-        .hamstergif.right {
-            left: auto;
-            right: 100px;
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr); 
+            gap: 20px;
+            margin-bottom: 30px;
         }
 
-        .heart {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            margin: auto;
-            width: 800px;
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); 
+            gap: 20px;
         }
 
-        .text {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            margin: auto;
-            color: white;
-            width: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 100px;
-            font-size: 2rem;
+        .image-grid img {
+            width: 100%;
+            max-height: 300px;
         }
 
-        .btn-container {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            margin: auto;
-            color: white;
-            width: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 100px;
-            font-size: 2rem;
-            gap: 100px;
+        .grid a {
+            display: block;
+            padding: 20px;
+            border: 2px solid #d24d57; /* Dark pink border */
+            text-align: center;
+            text-decoration: none;
+            color: #d24d57; /* Dark pink text */
+            border-radius: 10px; /* Rounded corners */
+            transition: all 0.3s ease; /* Smooth transition for hover effects */
         }
 
-        .yippie {
-            display: none;
-            position: absolute;
-            width: 500px;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            margin: auto;
+        .grid a:hover {
+            background-color: #d24d57; /* Dark pink background on hover */
+            color: #fff; /* White text on hover */
         }
-
-
-        /* CSS */
-        .button-1 {
-        background-color: #EA4C89;
-        border-radius: 8px;
-        border-style: none;
-        box-sizing: border-box;
-        color: #FFFFFF;
-        cursor: pointer;
-        display: inline-block;
-        font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-size: 2rem;
-        font-weight: 500;
-        height: 40px;
-        line-height: 20px;
-        list-style: none;
-        margin: 0;
-        outline: none;
-        padding: 10px 16px;
-        position: relative;
-        text-align: center;
-        text-decoration: none;
-        transition: color 100ms;
-        vertical-align: baseline;
-        user-select: none;
-        -webkit-user-select: none;
-        touch-action: manipulation;
-        }
-
-        .button-1:hover,
-        .button-1:focus {
-            background-color: #F082AC;
-        }
-
     </style>
 </head>
 <body>
-    <div id="container">
-        <img class="hamstergif" src="images/hamster.gif">
-        <img class="hamstergif right" src="images/hamster.gif">
-        <img class="heart" src="images/heart.png">
-        <div class="text">
-            Will you be my valentine, my love?
-        </div>
-
-        <div class="btn-container">
-            <button id="yesbtn" type="button" class="button-1 left" onclick="yesClick()">Yes</button>
-            <button id="nobtn" type="button" class="button-1" onclick="noClick()">No</button>
-        </div>
+    <div class="image-grid">
+        <img src="images/cat-calico-dance.gif">
+        <img src="images/cat-driving-large.gif">
+        <img src="images/tudou-tudou-dance.gif">
     </div>
-
-    <img class="yippie" src="images/yippie.gif">
+    <h1>I love Neli - Websites created by hubby for Neli</h1>
+    <div class="grid">
+        <a href="archive/newyears/">New years 🎊 01-01-2023</a>
+        <a href="archive/valentines/">Valentines 💘 14-02-2023</a>
+        <a href="archive/iwd/">International Women's Day ♀️ 10-03-2023</a>
+        <a href="archive/cats/">Cats 🐈 02-08-2023</a>
+        <a href="archive/birthday/">Birthday 🎂 10-09-2023</a>
+        <a href="archive/valentines2/">Valentines 2 14-02-2024</a>
+    </div>
+    <div class="image-grid">
+        <img src="images/cat-calico-dance-reversed.gif">
+        <img src="images/cat-driving-large-reversed.gif">
+        <img src="images/tudou-tudou-dance-reversed.gif">
+    </div>
 </body>
+</html>
